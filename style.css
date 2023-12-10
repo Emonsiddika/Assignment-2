@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbarSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 130px;
+display: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+#navbarBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #DD0000;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#bannerSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 30px;
+    background-color: black;
+    color: white;
+    padding: 30px 50px;
+    margin: 30px 130px;
+    border-radius: 20px;
+
+}
+
+
+#bannerText>h1 {
+    font-weight: 700;
+    font-size: 60px;
+
+}
+
+#bannerBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #DD0000;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+#bannerImage {
+    margin: auto;
+}
+
+#bannerImage img {
+    height: 500px;
+}
+
+
+/* match section start */
+#matchSection {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    justify-content: space-between;
+    align-items: start;
+    grid-gap: 25px;
+    padding: 30px 50px;
+    margin: 20px 90px;
+
+}
+
+#btnGroups {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+
+}
+
+#btnGroups>button {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+#btnGroups>#BlogBtn{
+    background-color: #DD0000;
+    color: white;
+    
+    }
+#allMatchs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+
+.matchCard {
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+
+.matchBanner>img {
+    width: 100%;
+
+}
+
+.matchInfo {
+    padding: 20px;
+}
+
+.matchInfo>button {
+    border-radius: 4px;
+    border: 1px solid #161616;
+    padding: 3px 7px;
+}
+
+.matchIcon {
+    display: flex;
+    gap: 30px;
+}
+
+.time,.comment {
+    display: flex;
+    gap: 7px;
+align-items: center;
+
+}
+/* match section end */
+#footerSection{
+    background-color: #161616;
+    color: white;
+    padding: 50px;
+   
+}
+
+#goalDiv{
+text-align: center;
+font-size: 30px;
+}
+ul{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive start */
+
+@media only screen and (max-width: 576px) {
+
+    /* nav bar section */
+    #navbarSection {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px;
+    }
+
+    ul>li {
+        gap: 5px;
+        font-size: 15px;
+    }
+
+    ul {
+        gap: 15px;
+        padding: 5px 15px;
+    }
+
+    #navbarBtn {
+        gap: 10px;
+        padding: 7px 10px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+
+    #bannerSection {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 60%;
+        padding: 0px 50px;
+        margin: 32px;
+    }
+
+    #bannerText>h1 {
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    #bannerText>p {
+        font-size: 15px;
+    }
+
+    #bannerText {
+        text-align: center;
+    }
+
+    #bannerBtn {
+        margin: auto;
+
+    }
+
+    #bannerImage img {
+        height: 300px;
+    }
+
+    #matchSection {
+        display: grid;
+        grid-template-columns:100% ;
+        grid-gap: 10px;
+        padding: 10px;
+        margin: 15px;
+    
+    }
+    
+    #allMatchs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+}
+
+#btnGroups {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+  margin: auto;
+   
+
+}
+
+
+#btnGroups>button {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 10px;
+}
+ul{
+    flex-direction: column;
+    }
+
+
+
+
+
+
+}
